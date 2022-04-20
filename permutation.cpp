@@ -21,7 +21,7 @@ int main()
 	system("pause");
 }
 
-string perm(string str, int permIndex)
+string perm(string& str, int& permIndex)
 {
 	auto temp_str = str;
 	int length = str.length();
