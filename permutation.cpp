@@ -7,7 +7,7 @@ using namespace std;
 
 //Forward declarations
 int fact(int x);
-string perm(string str, int permIndex);
+string perm(string& str, int permIndex);
 
 //Algorithm test
 int main()
@@ -18,10 +18,9 @@ int main()
 	for(int k = 0; k < fact(length); k++)
 		cout << ":::: " << perm(str, k) << "\n" << endl;
 	 
-	system("pause");
 }
 
-string perm(string& str, int& permIndex)
+string perm(string& str, int permIndex)
 {
 	auto temp_str = str;
 	int length = str.length();
